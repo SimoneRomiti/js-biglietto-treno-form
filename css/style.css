@@ -32,6 +32,18 @@ header{
   border: 1px solid #B91450;
 }
 
+.different{
+  margin-left: 0;
+  margin-right: 0;
+  border: 1px solid grey;
+}
+.first{
+  padding-left: 0;
+}
+.last{
+  padding-right: 0;
+}
+
 .margin{
   margin-top: 20px;
   height: 25vh;
@@ -50,4 +62,16 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 550px) {
+
+  .margin{
+    height: 15vh;
+  }
+
+  .height{
+    font-size: 10px;
+  }
+
 }

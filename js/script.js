@@ -5,6 +5,8 @@ var numeroKm;
 var eta;
 var numeroCasualeCarrozza;
 var codice;
+var prezzoSenzaSconto;
+var prezzoFinale;
 
 genera.addEventListener("click",
 function(){
@@ -41,7 +43,21 @@ function(){
 
   document.getElementById("code-number").innerHTML = codice;
 
+  // PREZZO
+  prezzoSenzaSconto = numeroKm * 0.21;
+  console.log(prezzoSenzaSconto);
 
+  if(eta == "Minorenne"){
+    prezzoFinale = prezzoSenzaSconto - ((prezzoSenzaSconto * 20) / 100);
+  }else if(eta == "Over65"){
+    prezzoFinale = prezzoSenzaSconto - ((prezzoSenzaSconto * 40) / 100);
+  } else{
+    prezzoFinale = prezzoSenzaSconto;
+  }
+  prezzoFinale = prezzoFinale.toFixed(2);
+  console.log(prezzoFinale);
+
+  document.getElementById("price").innerHTML = prezzoFinale + "€";
 }
 );
 
