@@ -77,6 +77,7 @@ function(){
 
   // CANCELLA DATI
   document.getElementById("passenger").innerHTML = "";
+  document.getElementById("passenger").innerHTML = "";
   document.getElementById("discount").innerHTML = "";
   document.getElementById("carriage-number").innerHTML = "";
   document.getElementById("code-number").innerHTML = "";
