@@ -1,5 +1,6 @@
 body{
-  background: #B91450;
+  /* background: #B91450; */
+background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
 }
 
 header{
@@ -34,7 +35,7 @@ header{
 
 .vanish{
   animation-name: disappear;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
@@ -89,6 +90,7 @@ header{
 
 .nome-passeggero{
   background: grey;
+  min-width: 80px;
 }
 
 .flex{
@@ -97,14 +99,33 @@ header{
   justify-content: space-around;
 }
 
+.ticket-title{
+  font-weight: 700;
+}
+
+#passenger{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
 @media screen and (max-width: 550px) {
 
   .margin{
-    height: 15vh;
+    height: 20vh;
   }
 
   .height{
     font-size: 10px;
   }
+  #passenger{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .white input, .white select{
+    margin: 20px auto;
 
 }
