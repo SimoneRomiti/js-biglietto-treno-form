@@ -66,10 +66,17 @@ header{
 
 }
 
+.margin{
+  margin-top: 20px;
+  height: 25vh;
+  border: 3px solid grey;
+}
+
 .different{
   margin-left: 0;
   margin-right: 0;
-  border: 1px solid grey;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 .first{
   padding-left: 0;
@@ -78,11 +85,7 @@ header{
   padding-right: 0;
 }
 
-.margin{
-  margin-top: 20px;
-  height: 25vh;
-  border: 3px solid grey;
-}
+
 
 .height{
   height: 100%;
