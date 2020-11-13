@@ -4,10 +4,12 @@ var nome;
 var numeroKm;
 var eta;
 var numeroCasualeCarrozza;
+var codice;
 
 genera.addEventListener("click",
 function(){
 
+  // RACCOLTA INPUT
   nome = document.getElementById("input-name").value;
   console.log(nome);
 
@@ -17,20 +19,27 @@ function(){
   eta = document.getElementById("age").value;
   console.log(eta);
 
+  // SCRITTURA NOME
   document.getElementById("passenger").innerHTML = nome;
 
+  // SCRITTURA SCONTO
   if(eta == "Minorenne" || eta == "Over65"){
     document.getElementById("discount").innerHTML = "Sconto " + eta;
   } else{
     document.getElementById("discount").innerHTML = "Prezzo standard";
   }
 
+  // NUMERO CARROZZA
   numeroCasualeCarrozza = Math.floor(Math.random() * 9 + 1);
   console.log(numeroCasualeCarrozza);
 
   document.getElementById("carriage-number").innerHTML = numeroCasualeCarrozza;
 
+  // CODICE
+  codice = Math.floor(Math.random() * 10000 + 90000);
+  console.log(codice);
 
+  document.getElementById("code-number").innerHTML = codice;
 
 
 }
