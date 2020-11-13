@@ -1,0 +1,53 @@
+body{
+  background: #B91450;
+}
+
+header{
+  color: white;
+}
+
+.wrapper{
+  width: 70%;
+  margin: auto;
+}
+
+.white{
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+
+.white input, .white select{
+  margin-top: 20px;
+  border: 1px solid #B91450;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.button{
+  margin-top: 30px;
+}
+.my-btn{
+  border: 1px solid #B91450;
+}
+
+.margin{
+  margin-top: 20px;
+  height: 25vh;
+  border: 3px solid grey;
+}
+
+.height{
+  height: 100%;
+}
+
+.nome-passeggero{
+  background: grey;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

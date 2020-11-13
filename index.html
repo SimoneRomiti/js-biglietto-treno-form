@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -8,7 +11,125 @@
   </head>
   <body>
 
+    <header>
+      <h1 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    </header>
 
-    <script src="js/script.js" charset="utf-8"></script>
+    <main>
+      <section class="form">
+        <div class="container text-center white">
+          <div class="row wrapper">
+            <div class="col-xs-12 col-sm-4">
+              <div class="name">
+                Nome e cognome
+              </div>
+              <input type="text" name="" value="" placeholder="Inserisci nome">
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+              <div class="name">
+                Km da percorrere
+              </div>
+              <input type="text" name="" value="" placeholder="Inserisci Km">
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+              <div class="name">
+                Fascia d'età
+              </div>
+              <select class="" name="">
+                <option value="Minorenne">Minorenne</option>
+                <option value="Maggiorenne">Maggiorenne</option>
+                <option value="Over65">Over65</option>
+              </select>
+            </div>
+
+            <div class="col-xs-12 col-sm-2 col-sm-offset-4">
+              <div class="button generate">
+                <button class="btn btn-default my-btn" type="submit">Button</button>
+              </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-2">
+              <div class="button annulla">
+                <button class="btn btn-default my-btn" type="submit">Button</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="ticket">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>IL TUO BIGLIETTO</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="container white margin">
+          <div class="row height">
+            <div class="col-xs-3 height">
+
+              <div class="nome-passeggero height flex">
+                NOME PASSEGGERO
+                <div id="passenger">
+                  prova
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="col-xs-3 height">
+              <div class="offerta height flex">
+                Offerta
+                <div id="sconto">
+                  prova
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-2 height">
+              <div class="carrozza height flex">
+                Carrozza
+                <div id="numero-carrozza">
+                  prova
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-2 height">
+              <div class="codice height flex">
+                Codice
+                <div id="numero-codice">
+                  prova
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-2 height">
+              <div class="costo height flex">
+                Costo
+                <div id="prezzo">
+                  prova
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    </div>
+
+
+    <!-- <script src="js/script.js" charset="utf-8"></script> -->
   </body>
 </html>
