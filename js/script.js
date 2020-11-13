@@ -1,5 +1,5 @@
 
-var genera = document.getElementById("genera");
+var genera = document.getElementById("generate");
 var nome;
 var numeroKm;
 var eta;
@@ -8,6 +8,7 @@ var codice;
 var prezzoSenzaSconto;
 var prezzoFinale;
 
+// PULSANTE GENERA
 genera.addEventListener("click",
 function(){
 
@@ -58,9 +59,30 @@ function(){
   console.log(prezzoFinale);
 
   document.getElementById("price").innerHTML = prezzoFinale + "€";
+
+  // APPARIZIONE BIGLIETTO
+  document.getElementById("ticket").className = "show";
+
 }
 );
 
+// PULSANTE ANNULLA
+var annulla = document.getElementById("delete");
+
+annulla.addEventListener("click",
+function(){
+
+  // SCOMPARSA BIGLIETTO
+  document.getElementById("ticket").className = "vanish";
+
+  // CANCELLA DATI
+  document.getElementById("passenger").innerHTML = "";
+  document.getElementById("discount").innerHTML = "";
+  document.getElementById("carriage-number").innerHTML = "";
+  document.getElementById("code-number").innerHTML = "";
+  document.getElementById("price").innerHTML = "";
+}
+);
 
 
 
